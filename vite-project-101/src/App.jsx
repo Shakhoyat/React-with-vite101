@@ -11,15 +11,26 @@ const App = () => {
     isLoggedIn: true,
     skills: ['JavaScript', 'React', 'Node.js']
   }
+  const product = {
+    name: 'Laptop',
+    model: 'Dell XPS 13',
+    brand: 'Dell',
+    category: 'Electronics',
+    description: 'A high-performance laptop with a sleek design.',
+    price: 1000,
+    inStock: true
+  }
   return (
     <div>
-      <h1>MERN Development</h1>
-      <h2>{name}</h2>
-      <p>age = {age}</p>
-      <h3>Im learning React.js...My other skills are:</h3>
-      <h3>{skills}</h3>
-      <h1>2+5</h1>
-      <h1>{2+5}</h1>
+      <h1>Name = {user.name}</h1>
+      <h2>Age = {user.age}</h2>
+      <h3>Is Logged In = {user.isLoggedIn ? 'Yes' : 'No'}</h3>
+      <h4>Skills:</h4>
+      <ul>
+        {user.skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
     </div>
   )
 }
