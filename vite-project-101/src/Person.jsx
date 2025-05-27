@@ -1,6 +1,6 @@
 //As the name was Capitalized, it was not recognized as a component.
 import React from 'react'
-
+import Superman from './Superman'
 const Person = () => {
     const name = 'Skt'
     const age = 25
@@ -23,6 +23,7 @@ const Person = () => {
     }
     return (
         <>
+            <Superman />
             <div>
                 <h1>Name = {user.name}</h1>
                 <h2>Age = {user.age}</h2>
