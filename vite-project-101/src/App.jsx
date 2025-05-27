@@ -1,6 +1,6 @@
 import React from 'react'
 import Person from './Person'
-import { Test } from './components/Test'
+import Test from './components/Test'
 // Importing the Person component and Test component from the components directory
 
 function App() {
