@@ -10,6 +10,7 @@ import Laptop from './components/Laptop'
 import Events from './components/Events'
 import Counter from './components/Counter'
 import ShowProducts from './components/ShowProducts'
+import FilterProduct from './components/FilterProduct'
 
 
 function App() {
@@ -51,7 +52,10 @@ function App() {
         {/* <Counter /> */}
       </div>
       <div>
-        <ShowProducts />
+        {/* <ShowProducts /> */}
+      </div>
+      <div>
+        <FilterProduct />
       </div>
     </>
   )
