@@ -11,6 +11,9 @@ const Person3 = ({ name, age, pancard }) => {
             <p>
                 {pancard ? <h3>You can open  a bank A/c now !!!</h3> : " "}
             </p>
+            <p>
+                {(pancard == true) && <p>You can have an Account bro </p>}
+            </p>
         </div>
     )
 }
