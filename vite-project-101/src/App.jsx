@@ -5,7 +5,7 @@ import Shujon from './components/Test'
 import Sohan from './components/Product'
 import Product from './components/Product'
 import Person2 from './components/Person2'
-
+import Person3 from './components/Person3'
 
 function App() {
   return (
@@ -30,6 +30,9 @@ function App() {
         <Person2 name="sohan" age={19} salary={20000} />
         <Person2 name="saki" age={15} salary={30000} />
         <Person2 name="tanvir" age={14} salary={40000} /> */}
+      </div>
+      <div>
+        <Person3 name="Roman" age={16} />
       </div>
     </>
   )
