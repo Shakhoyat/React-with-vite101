@@ -9,6 +9,7 @@ import Person3 from './components/Person3'
 import Laptop from './components/Laptop'
 import Events from './components/Events'
 import Counter from './components/Counter'
+import ShowProducts from './components/ShowProducts'
 
 
 function App() {
@@ -43,9 +44,14 @@ function App() {
         <Laptop brandname="Dell" model="XPS 13" price={150000} />
         <Laptop brandname="Apple" model="MacBook Pro" price={250000} /> */}
       </div>
-      {/* <Events /> */}
       <div>
-        <Counter />
+        {/* <Events /> */}
+      </div>
+      <div>
+        {/* <Counter /> */}
+      </div>
+      <div>
+        <ShowProducts />
       </div>
     </>
   )
