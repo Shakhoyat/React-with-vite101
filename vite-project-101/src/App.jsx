@@ -32,7 +32,7 @@ function App() {
         <Person2 name="tanvir" age={14} salary={40000} /> */}
       </div>
       <div>
-        <Person3 name="Roman" age={16} />
+        <Person3 name="Roman" age={16} pancard={true} />
       </div>
     </>
   )
