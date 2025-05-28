@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Counter = () => {
-    let count = 0;
+    const [cnt, setCnt] = useState(0);
     const increment = () => {
-        count++;
-        console.log("Count val = ", count);
+        setCnt(cnt + 1);
+        console.log("Count val = ", cnt);
     };
     const decrement = () => {
-        count--;
-        console.log("Count val = ", count);
+        setCnt(cnt - 1);
+        console.log("Count val = ", cnt);
     };
     return (
         <div>
-            <h1>{count}</h1>
+            <h1>{cnt}</h1>
             <button onClick={increment}>Inc.</button>
             <button onClick={decrement}>Dec.</button>
         </div>
