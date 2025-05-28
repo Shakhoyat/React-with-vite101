@@ -1,0 +1,21 @@
+.divv {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #ff5858, #f09819);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 20px auto;      /* Center horizontally and add vertical space */
+    padding: 16px;          /* Add inner spacing */
+    box-sizing: border-box; /* Ensure padding doesn't increase size */
+}
+
+.divv:hover {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
