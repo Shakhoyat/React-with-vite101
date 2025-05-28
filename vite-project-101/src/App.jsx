@@ -7,6 +7,7 @@ import Product from './components/Product'
 import Person2 from './components/Person2'
 import Person3 from './components/Person3'
 import Laptop from './components/Laptop'
+import Events from './components/Events'
 
 
 function App() {
@@ -37,11 +38,11 @@ function App() {
         {/* <Person3 name="Roman" age={16} pancard={true} /> */}
       </div>
       <div>
-        <Laptop brandname="hp" model="probook" price={120000} />
+        {/* <Laptop brandname="hp" model="probook" price={120000} />
         <Laptop brandname="Dell" model="XPS 13" price={150000} />
-        <Laptop brandname="Apple" model="MacBook Pro" price={250000} />
+        <Laptop brandname="Apple" model="MacBook Pro" price={250000} /> */}
       </div>
-
+      <Events />
     </>
   )
 }
