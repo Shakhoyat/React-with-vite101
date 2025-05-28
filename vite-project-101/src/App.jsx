@@ -3,6 +3,7 @@ import Person from './Person'
 import Shujon from './components/Test'
 // Importing the Person component and Test component from the components directory
 import Sohan from './components/Product'
+import Product from './components/Product'
 function App() {
   return (
     <>
@@ -14,8 +15,9 @@ function App() {
       <p>Happy coding!</p>
       {/* <Person /> */}
       <Shujon />
-      <Shujon />
-      <Shujon />
+      <Product brand="Apple" name="iPhone 15 Pro Max" price={120000} />
+      <Product brand="Google" name="Pixel 8 Pro" price={90000} />
+      <Product brand="Nothing Phone" name="Nothing 7 pro" price={150000} />
     </>
   )
 }
