@@ -1,11 +1,17 @@
 import React, { useState } from 'react'
 import UseEffect from './components/UseEffect'
+import FetchDataApi from './components/FetchDataApi'
 
 
 const App = () => {
   return (
     <>
-      <UseEffect />
+      <div>
+        {/* <UseEffect /> */}
+      </div>
+      <div>
+        <FetchDataApi />
+      </div>
     </>
   )
 }
