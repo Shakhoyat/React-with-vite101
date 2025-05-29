@@ -1,21 +1,11 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import UseEffect from './components/UseEffect'
+
 
 const App = () => {
-  const [cnt, setcnt] = useState(0)
-  useEffect(() => {
-    document.title = `Count is ${cnt}`;
-    console.log("Use Effect calling...");
-  }, [cnt]);
-
   return (
     <>
-      <h1>
-        {cnt}
-      </h1>
-      <button onClick={() => setcnt(cnt + 1)}>Increment</button>
-      <button onClick={() => setcnt(cnt - 1)}>Decrement</button>
-
+      <UseEffect />
     </>
   )
 }
