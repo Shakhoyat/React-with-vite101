@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import UseEffect from './components/UseEffect'
 import FetchDataApi from './components/FetchDataApi'
+import Forms from './components/Forms'
 
 
 const App = () => {
@@ -10,7 +11,10 @@ const App = () => {
         {/* <UseEffect /> */}
       </div>
       <div>
-        <FetchDataApi />
+        {/* <FetchDataApi /> */}
+      </div>
+      <div>
+        <Forms />
       </div>
     </>
   )
