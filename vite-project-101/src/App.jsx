@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react'
 const App = () => {
   const [cnt, setcnt] = useState(0)
   useEffect(() => {
+    document.title = `Count is ${cnt}`;
     console.log("Use Effect calling...");
-  }, []);
+  }, [cnt]);
+
   return (
     <>
       <h1>
