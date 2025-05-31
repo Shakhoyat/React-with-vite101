@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Products = () => {
+const Courses = () => {
     const arr = [
         { id: mern101, name: "MERN stack", price: 15000, duration: '5 months' },
         { id: py102, name: "Python Full Stack", price: 12000, duration: '4 months' },
@@ -9,7 +9,7 @@ const Products = () => {
     ];
     return (
         <div>
-            <h1>Products Page</h1>
+            <h1>Courses Page</h1>
             <ul>
                 {arr.map((item) => (
                     <li key={item.id}>
@@ -21,4 +21,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Courses
