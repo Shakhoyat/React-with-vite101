@@ -6,10 +6,14 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Course_Details from './pages/Course_Details';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav_bar from './components/Nav_bar';
+
+
 const App = () => {
   return (
     <div>
       <Router>
+        <Nav_bar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
