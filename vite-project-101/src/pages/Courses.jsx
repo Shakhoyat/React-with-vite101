@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Courses = () => {
     const courses = [
         { id: 'React101', name: 'React Basics', price: 100, duration: '3 weeks' },
@@ -17,9 +17,7 @@ const Courses = () => {
             <ul>
                 {courses.map(course => (
                     <li key={course.id}>
-                        <h2>{course.name}</h2>
-                        <p>Price: ${course.price}</p>
-                        <p>Duration: {course.duration}</p>
+                        <h2><Link to={`/courses/${course.id}`}>{course.name}</Link>{" "} </h2>
                     </li>
                 ))}
             </ul>
