@@ -4,6 +4,7 @@ import Courses from './pages/Courses';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Course_Details from './pages/Course_Details';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/course-details/:id" element={<Course_Details />} />
         </Routes>
       </Router>
       <h1>Welcome to the App</h1>
