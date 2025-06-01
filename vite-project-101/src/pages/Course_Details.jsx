@@ -1,5 +1,5 @@
 import React, { use } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Course_Details = () => {
@@ -18,20 +18,26 @@ const Course_Details = () => {
     const courseDetail = course_detail_array.find(course => course.id === id);
     console.log(courseDetail);
     return (
-        <div>
-            <h1>Course Details</h1>
-            <h2>Course ID: {id}</h2>
-            {courseDetail ? (
-                <div>
-                    <h3>Course Name: {courseDetail.name}</h3>
-                    <p>Price: ${courseDetail.price}</p>
-                    <p>Duration: {courseDetail.duration}</p>
-                </div>
-            ) : (
-                <p>No course found with the ID: {id}</p>
-            )}
-            {/* You can fetch and display more details about the course using the id */}
-        </div>
+        <>
+            <div>
+                <h1>Course Details</h1>
+                <h2>Course ID: {id}</h2>
+                {courseDetail ? (
+                    <div>
+                        <h3>Course Name: {courseDetail.name}</h3>
+                        <p>Price: ${courseDetail.price}</p>
+                        <p>Duration: {courseDetail.duration}</p>
+                    </div>
+                ) : (
+                    <p>No course found with the ID: {id}</p>
+                )}
+                {/* You can fetch and display more details about the course using the id */}
+            </div>
+            <button>
+                <Link to={"/courses"} style={{ textDecoration: "none", color: "-moz-initial" }}>All courses</Link>
+            </button>
+
+        </>
     )
 }
 
