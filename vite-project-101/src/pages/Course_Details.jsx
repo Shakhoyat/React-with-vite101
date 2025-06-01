@@ -1,5 +1,5 @@
 import React, { use } from 'react'
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Course_Details = () => {
@@ -14,9 +14,11 @@ const Course_Details = () => {
         { id: 'FrontendJest', name: 'Frontend Testing with Jest', price: 90, duration: '2 weeks' }
     ];
     // console.log(useParams());
+    // console.log(useLocation());
     const { id } = useParams();
     const courseDetail = course_detail_array.find(course => course.id === id);
     console.log(courseDetail);
+    const location = useLocation();
     return (
         <>
             <div>
@@ -25,8 +27,14 @@ const Course_Details = () => {
                 {courseDetail ? (
                     <div>
                         <h3>Course Name: {courseDetail.name}</h3>
-                        <p>Price: ${courseDetail.price}</p>
-                        <p>Duration: {courseDetail.duration}</p>
+                        {
+                            location.pathname !== `/courses/ExpressDeepDive` && (
+                                <>
+                                    <p> Price: ${courseDetail.price}</p>
+                                    <p>Duration: {courseDetail.duration}</p>
+                                </>
+                            )
+                        }
                     </div>
                 ) : (
                     <p>No course found with the ID: {id}</p>
