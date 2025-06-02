@@ -12,13 +12,12 @@ import Profile from './pages/Profile';
 import Bdgovt from './Home/Bdgovt';
 
 const App = () => {
-  const money = 1000;
   return (
     <div>
       <Router>
         <Nav_bar />
         <Routes>
-          <Route path="/" element={<Bdgovt money={money} />} />
+          <Route path="/" element={<Bdgovt />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
