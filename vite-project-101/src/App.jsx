@@ -9,15 +9,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav_bar from './components/Nav_bar';
 import Dashbord from './pages/Dashbord';
 import Profile from './pages/Profile';
-
+import Bdgovt from './Home/Bdgovt';
 
 const App = () => {
+  const money = 1000;
   return (
     <div>
       <Router>
         <Nav_bar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Bdgovt money={money} />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
